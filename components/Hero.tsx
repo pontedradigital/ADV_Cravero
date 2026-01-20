@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-dark-900 selection:bg-gold-500 selection:text-white">
+    <section id="hero" className="relative min-h-screen flex items-center pt-40 md:pt-32 pb-12 overflow-hidden bg-dark-900 selection:bg-gold-500 selection:text-white">
 
       {/* --- Dynamic Background --- */}
       {/* Noise Texture Overlay for premium feel */}
