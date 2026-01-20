@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from './Button';
-import { WHATSAPP_LINK } from '../constants';
+import { WHATSAPP_LINK, OAB_NUMBER } from '../constants';
 import { smoothScrollTo } from '../utils/scrollUtils';
 import { Shield, MessageCircle, CheckCircle2 } from 'lucide-react';
 
@@ -190,7 +190,7 @@ export const Hero: React.FC = () => {
             <div className="absolute bottom-6 left-6 right-6 bg-white/5 backdrop-blur-md border border-white/10 p-4 rounded-lg z-20">
               <p className="font-serif text-white text-xl">Dr. Caio Cravero</p>
               <div className="h-0.5 w-10 bg-gold-500 my-2"></div>
-              <p className="text-gray-300 text-xs uppercase tracking-widest">Advogado • OAB/SP</p>
+              <p className="text-gray-300 text-xs uppercase tracking-widest">Advogado • OAB/SP {OAB_NUMBER}</p>
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Shield } from 'lucide-react';
-import { LAWYER_NAME, NAV_ITEMS } from '../constants';
+import { LAWYER_NAME, NAV_ITEMS, OAB_NUMBER } from '../constants';
 import { smoothScrollTo } from '../utils/scrollUtils';
 
 export const Footer: React.FC = () => {
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
             </p>
             <div className="flex items-center gap-2 text-gold-600">
               <Shield size={16} />
-              <span className="text-xs font-bold">OAB/SP 000.000</span>
+              <span className="text-xs font-bold">OAB/SP {OAB_NUMBER}</span>
             </div>
           </div>
         </div>
