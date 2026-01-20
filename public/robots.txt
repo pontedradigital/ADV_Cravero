@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://drcaiocravero.adv.br/sitemap.xml

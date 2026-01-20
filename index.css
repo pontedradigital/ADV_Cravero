@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Custom Premium Gold Scrollbar --- */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D4AF37 #050505;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+  border-left: 1px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom, 
+    #806921, 
+    #AA8C2C, 
+    #D4AF37, 
+    #AA8C2C, 
+    #806921  
+  );
+  border-radius: 6px;
+  border: 2px solid #050505;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    to bottom, 
+    #AA8C2C, 
+    #D4AF37, 
+    #F0DEAA, 
+    #D4AF37, 
+    #AA8C2C
+  );
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-image: linear-gradient(
+    to bottom, 
+    #D4AF37, 
+    #F0DEAA, 
+    #FFFFFF, 
+    #F0DEAA, 
+    #D4AF37
+  );
+}
+
+body {
+  background-color: #050505;
+  color: #f3f4f6;
+}
