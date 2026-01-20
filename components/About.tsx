@@ -2,13 +2,14 @@ import React from 'react';
 import { VALUES } from '../constants';
 import { SectionTitle } from './SectionTitle';
 import { ScrollReveal } from './ScrollReveal';
+import backgroundImage from '../imagem/Background.webp';
 
 export const About: React.FC = () => {
   return (
     <section 
       id="sobre" 
       className="py-24 relative bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay to ensure readability and blend with theme */}
       <div className="absolute inset-0 bg-dark-900/95"></div>

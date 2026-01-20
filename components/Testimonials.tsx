@@ -3,22 +3,23 @@ import { Star, Quote } from 'lucide-react';
 import { TESTIMONIALS } from '../constants';
 import { SectionTitle } from './SectionTitle';
 import { ScrollReveal } from './ScrollReveal';
+import backgroundImage from '../imagem/Background.webp';
 
 export const Testimonials: React.FC = () => {
   return (
-    <section 
-      id="depoimentos" 
+    <section
+      id="depoimentos"
       className="py-24 relative bg-fixed bg-center bg-cover"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-dark-900/95"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <ScrollReveal>
-          <SectionTitle 
-            title="O Que Dizem Nossos Clientes" 
-            subtitle="Confiança e Resultados" 
+          <SectionTitle
+            title="O Que Dizem Nossos Clientes"
+            subtitle="Confiança e Resultados"
           />
         </ScrollReveal>
 
@@ -27,7 +28,7 @@ export const Testimonials: React.FC = () => {
             <ScrollReveal key={testimonial.id} delay={index * 150}>
               <div className="bg-dark-900/90 backdrop-blur-sm p-8 rounded-lg relative shadow-lg border border-gray-800/50 h-full">
                 <Quote size={40} className="absolute top-6 right-6 text-gold-500/20" />
-                
+
                 <div className="flex gap-1 mb-4 text-gold-500">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} size={16} fill="currentColor" />

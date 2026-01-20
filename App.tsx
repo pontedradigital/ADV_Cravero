@@ -10,6 +10,9 @@ import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfUse } from './components/TermsOfUse';
+import { AdminPage } from './components/AdminPage';
 import { Construction } from './components/Construction';
 
 // Component for the main single-page application landing
@@ -29,23 +32,48 @@ const LandingPage: React.FC = () => (
   </div>
 );
 
+import { CookieConsent } from './components/CookieConsent';
+
 const App: React.FC = () => {
   // Simple client-side routing based on pathname
   const path = window.location.pathname;
 
-  // 1. Exact match for main Blog Page
-  if (path === '/blog' || path === '/blog/') {
-    return <BlogList />;
-  }
+  const renderContent = () => {
+    // 1. Exact match for main Blog Page
+    if (path === '/blog' || path === '/blog/') {
+      return <BlogList />;
+    }
 
-  // 2. Prefix match for specific Blog Posts
-  // Updated to use the real BlogPost component
-  if (path.startsWith('/blog/')) {
-    return <BlogPost />;
-  }
+    // 2. Prefix match for specific Blog Posts
+    if (path.startsWith('/blog/')) {
+      return <BlogPost />;
+    }
 
-  // 3. Default to Landing Page for root (/) or any other undefined route
-  return <LandingPage />;
+    // 3. Privacy Policy
+    if (path === '/politica-de-privacidade') {
+      return <PrivacyPolicy />;
+    }
+
+    // 4. Terms of Use
+    if (path === '/termos-de-uso') {
+      return <TermsOfUse />;
+    }
+
+    // 5. Admin Panel
+    if (path === '/painel-admin') {
+      return <AdminPage />;
+    }
+
+    // 6. Default to Landing Page
+    return <LandingPage />;
+  };
+
+  return (
+    <>
+      {renderContent()}
+      <CookieConsent />
+    </>
+  );
 };
 
 export default App;

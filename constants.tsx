@@ -1,12 +1,12 @@
-import { 
-  Scale, 
-  Home, 
-  FileText, 
-  Users, 
-  Briefcase, 
-  ShoppingCart, 
-  Building2, 
-  Gavel 
+import {
+  Scale,
+  Home,
+  FileText,
+  Users,
+  Briefcase,
+  ShoppingCart,
+  Building2,
+  Gavel
 } from 'lucide-react';
 import { NavItem, PracticeArea, Testimonial, ValueItem } from './types';
 
@@ -130,106 +130,107 @@ export const VALUES: ValueItem[] = [
 
 // Dados dos Blogs centralizados
 export const BLOG_POSTS = [
-  { 
-    slug: "protecao-patrimonial-2024", 
-    title: "Como proteger seu patrimônio em 2024", 
-    date: "15 Mai, 2024", 
-    category: "Empresarial", 
+  {
+    slug: "lgpd-ia-empresas-2026",
+    title: "LGPD e Inteligência Artificial: O que muda em 2026",
+    date: "12 Mar, 2026",
+    category: "Tecnologia",
     author: "Dr. Caio Cravero",
-    excerpt: "Estratégias jurídicas fundamentais para blindar seus bens contra riscos de mercado e litígios.",
+    excerpt: "Novas diretrizes da ANPD sobre o uso de IA e como sua empresa deve se adaptar para evitar sanções.",
     content: `
-      <p>A proteção patrimonial é um conjunto de estratégias jurídicas e contábeis que visam resguardar os bens de uma pessoa física ou jurídica contra eventuais riscos e contingências. Em um cenário econômico instável, blindar o patrimônio torna-se essencial.</p>
+      <p>Com o avanço acelerado da Inteligência Artificial generativa, a Autoridade Nacional de Proteção de Dados (ANPD) emitiu novas diretrizes para 2026. A principal mudança foca na transparência algorítmica: as empresas agora devem explicar claramente aos usuários quando e como seus dados estão sendo processados por IA.</p>
       
-      <h3>O que é Holding Familiar?</h3>
-      <p>Uma das ferramentas mais eficientes para proteção patrimonial é a constituição de uma Holding Familiar. Trata-se de uma empresa criada com o objetivo de administrar o patrimônio de uma família, facilitando a sucessão e oferecendo benefícios fiscais.</p>
+      <h3>Principais pontos de atenção</h3>
+      <p>O consentimento genérico não é mais suficiente. Para o treinamento de modelos de IA com dados de clientes, é necessário um consentimento específico e revogável a qualquer momento. Além disso, a responsabilidade civil por decisões automatizadas (como recusa de crédito por um algoritmo) tornou-se objetiva em certos casos.</p>
       
-      <h3>Principais Vantagens</h3>
-      <ul>
-        <li><strong>Redução da Carga Tributária:</strong> A tributação sobre aluguéis e venda de imóveis pode ser significativamente menor na pessoa jurídica.</li>
-        <li><strong>Planejamento Sucessório:</strong> Evita o doloroso e custoso processo de inventário, permitindo a distribuição de quotas em vida com reserva de usufruto.</li>
-        <li><strong>Proteção contra Reveses Financeiros:</strong> Separa o patrimônio pessoal dos riscos da atividade empresarial operacional.</li>
-      </ul>
+      <blockquote>
+        "A tecnologia avança, mas os direitos fundamentais permanecem. A conformidade digital não é apenas sobre evitar multas, é sobre reputação de mercado."
+      </blockquote>
 
-      <p>É fundamental que qualquer estratégia de proteção patrimonial seja elaborada por advogados especialistas, garantindo que não haja caracterização de fraude contra credores, o que anularia a eficácia da proteção.</p>
+      <p>Recomendamos uma revisão imediata das Políticas de Privacidade e dos Termos de Uso de todas as plataformas digitais corporativas para adequação a este novo cenário regulatório.</p>
     `
   },
-  { 
-    slug: "direitos-consumidor-online", 
-    title: "Direitos do consumidor em compras online", 
-    date: "02 Mai, 2024", 
-    category: "Consumidor", 
+  {
+    slug: "smart-contracts-validade-juridica",
+    title: "Contratos Inteligentes: Validade jurídica no Brasil",
+    date: "15 Fev, 2026",
+    category: "Inovação",
     author: "Dr. Caio Cravero",
-    excerpt: "Entenda o direito de arrependimento, trocas e garantias no comércio eletrônico.",
+    excerpt: "Como o judiciário brasileiro tem interpretado a execução automática de cláusulas em blockchain.",
     content: `
-      <p>Com o crescimento exponencial do e-commerce, aumentaram também as dúvidas sobre os direitos de quem compra pela internet. O Código de Defesa do Consumidor (CDC) possui regras específicas para proteger o consumidor nesse ambiente.</p>
+      <p>Os <em>Smart Contracts</em> (contratos inteligentes) deixaram de ser uma promessa futurista para se tornarem realidade no mercado imobiliário e financeiro. Mas qual a segurança jurídica desses códigos autoexecutáveis no Brasil?</p>
       
-      <h3>Direito de Arrependimento</h3>
-      <p>O artigo 49 do CDC garante o chamado "direito de arrependimento". O consumidor tem o prazo de 7 dias, a contar do recebimento do produto, para desistir da compra sem precisar justificar o motivo. O reembolso deve ser total, incluindo o frete.</p>
+      <h3>Código é Lei?</h3>
+      <p>Embora a automação garanta que a cláusula seja cumprida (ex: liberar o pagamento de um aluguel apenas quando a chave digital for entregue), o judiciário brasileiro mantém o entendimento de que a lei prevalece sobre o código. Cláusulas abusivas, mesmo que codificadas em blockchain, podem ser anuladas judicialmente.</p>
       
-      <h3>Trocas e Garantias</h3>
-      <p>Se o produto apresentar defeito, o consumidor tem 30 dias (bens não duráveis) ou 90 dias (bens duráveis) para reclamar. A loja online tem a obrigação de sanar o vício em até 30 dias. Caso contrário, o consumidor pode exigir:</p>
+      <p>A vantagem, contudo, é a <strong>redução drástica da inadimplência</strong> e a agilidade nas transações. Para validade plena, recomendamos que todo Smart Contract seja acompanhado de um instrumento jurídico tradicional (Ricardian Contract) que defina o foro e as leis aplicáveis em caso de falha sistêmica.</p>
+    `
+  },
+  {
+    slug: "reforma-tributaria-sucessao",
+    title: "Reforma Tributária 2026: Impactos na herança",
+    date: "20 Jan, 2026",
+    category: "Tributário",
+    author: "Dr. Caio Cravero",
+    excerpt: "As novas alíquotas progressivas do ITCMD e por que você deve rever seu planejamento sucessório agora.",
+    content: `
+      <p>A virada de ano trouxe a plena vigência das novas alíquotas do Imposto sobre Transmissão Causa Mortis e Doação (ITCMD). A mudança para um sistema progressivo (quem herda mais, paga mais) impacta diretamente famílias de classe média e alta.</p>
+      
+      <h3>O fim da alíquota única</h3>
+      <p>Anteriormente fixado em percentuais estáticos em muitos estados, agora o imposto pode chegar ao teto constitucional de forma escalonada. Isso encarece significativamente o processo de inventário tradicional.</p>
+      
+      <h3>Como se proteger?</h3>
       <ul>
-        <li>Substituição do produto;</li>
-        <li>Restituição imediata do valor pago;</li>
-        <li>Abatimento proporcional do preço.</li>
+        <li><strong>Doação em Vida com Reserva de Usufruto:</strong> Antecipar a herança pode congelar a base de cálculo e garantir alíquotas menores.</li>
+        <li><strong>Estruturas Societárias:</strong> A integralização de bens em holdings continua sendo uma estratégia válida, embora exija maior sofisticação contábil com as novas regras de distribuição de lucros.</li>
       </ul>
     `
   },
-  { 
-    slug: "divorcio-extrajudicial", 
-    title: "Divórcio extrajudicial: O que você precisa saber", 
-    date: "20 Abr, 2024", 
-    category: "Família", 
+  {
+    slug: "divorcio-ativos-digitais",
+    title: "Divórcio: Como fica a partilha de Criptos e Milhas?",
+    date: "05 Dez, 2025",
+    category: "Família",
     author: "Dr. Caio Cravero",
-    excerpt: "Um guia passo a passo sobre como realizar o divórcio em cartório de forma rápida e menos burocrática.",
+    excerpt: "Ativos digitais agora entram na partilha de bens. Saiba como rastrear e dividir esse patrimônio invisível.",
     content: `
-      <p>O divórcio extrajudicial, realizado diretamente em cartório, é a forma mais rápida e menos custosa de dissolver o casamento. No entanto, é necessário cumprir alguns requisitos legais para optar por essa via.</p>
+      <p>Não se dividem mais apenas casas e carros. Em 2025, o "patrimônio invisível" tornou-se o centro de muitas disputas em Varas de Família.</p>
       
-      <h3>Requisitos Obrigatórios</h3>
-      <ul>
-        <li><strong>Consenso:</strong> Ambas as partes devem estar de acordo com o divórcio e com a partilha de bens.</li>
-        <li><strong>Inexistência de Filhos Menores ou Incapazes:</strong> Se houver filhos menores, o divórcio deve ser judicial, para garantir os direitos das crianças (salvo em alguns estados que já flexibilizam essa regra).</li>
-        <li><strong>Presença de Advogado:</strong> A lei exige a assistência de um advogado, que pode ser comum ao casal ou individual.</li>
-      </ul>
+      <p>Criptomoedas, NFTs, milhas aéreas acumuladas e até contas monetizadas em redes sociais são considerados bens partilháveis no regime de comunhão parcial. O desafio, muitas vezes, não é a lei, mas a prova da existência desses bens.</p>
       
-      <h3>Documentação Necessária</h3>
-      <p>Para dar entrada, é necessário apresentar certidão de casamento atualizada, documentos pessoais, pacto antenupcial (se houver) e documentos dos bens a serem partilhados (imóveis, veículos, contas bancárias).</p>
+      <h3>Investigação Patrimonial Digital</h3>
+      <p>Temos utilizado ferramentas de rastreio de blockchain e ofícios judiciais a exchanges para evitar a ocultação de patrimônio por um dos cônjuges. Se você suspeita que seu parceiro(a) possui investimentos digitais não declarados, a orientação prévia ao divórcio é crucial para garantir uma partilha justa.</p>
     `
   },
-  { 
-    slug: "inventario-agil", 
-    title: "Como agilizar um processo de inventário", 
-    date: "10 Abr, 2024", 
-    category: "Sucessões", 
+  {
+    slug: "heranca-digital-acesso",
+    title: "Herança Digital: Quem herda seu WhatsApp e Instagram?",
+    date: "18 Nov, 2025",
+    category: "Sucessões",
     author: "Dr. Caio Cravero",
-    excerpt: "Dicas práticas para herdeiros evitarem multas e demoras desnecessárias na partilha de bens.",
+    excerpt: "O direito das famílias ao acesso de contas falecidos versus a privacidade do usuário.",
     content: `
-      <p>O inventário é temido por muitos devido à burocracia, mas com o acompanhamento correto, é possível torná-lo célere.</p>
-      <h3>Prazos e Multas</h3>
-      <p>O prazo para abertura do inventário é de 60 dias após o falecimento. A perda desse prazo acarreta multa sobre o imposto de transmissão (ITCMD).</p>
+      <p>Quando alguém falece, o que acontece com suas mensagens privadas e perfis sociais? A jurisprudência recente tem se consolidado no sentido de distinguir <strong>acervo patrimonial</strong> (contas que geram renda) de <strong>acervo existencial</strong> (conversas privadas).</p>
+      
+      <p>Enquanto canais do YouTube e perfis profissionais de Instagram podem ser herdados e administrados pelos sucessores, o acesso a conversas de WhatsApp tem sido negado pelos tribunais para preservar a privacidade do falecido e de seus interlocutores, salvo vontade expressa deixada em testamento.</p>
+      
+      <p>Para evitar longas batalhas judiciais com as plataformas (Big Techs), a inclusão de um capítulo sobre "Legado Digital" no testamento ou em codicilo tornou-se indispensável.</p>
     `
   },
-  { 
-    slug: "contratos-imobiliarios", 
-    title: "Cuidados essenciais em contratos imobiliários", 
-    date: "05 Mar, 2024", 
-    category: "Imobiliário", 
+  {
+    slug: "holding-familiar-blindagem",
+    title: "Holdings Familiares: Ainda valem a pena?",
+    date: "10 Out, 2025",
+    category: "Empresarial",
     author: "Dr. Caio Cravero",
-    excerpt: "Não assine nada sem ler: as cláusulas mais perigosas em contratos de compra e venda de imóveis.",
+    excerpt: "Análise atualizada sobre a eficácia da blindagem patrimonial frente às novas decisões do STJ.",
     content: `
-      <p>A compra de um imóvel é um dos maiores investimentos da vida de uma pessoa. Contratos mal redigidos podem levar à perda do bem e do dinheiro investido.</p>
-      <p>Verifique sempre a matrícula atualizada do imóvel, certidões negativas do vendedor e cláusulas de irretratabilidade.</p>
-    `
-  },
-  { 
-    slug: "holding-familiar", 
-    title: "Vantagens da Holding Familiar", 
-    date: "28 Fev, 2024", 
-    category: "Planejamento", 
-    author: "Dr. Caio Cravero",
-    excerpt: "Entenda como uma holding pode facilitar a sucessão e reduzir a carga tributária da família.",
-    content: `
-      <p>A Holding Familiar não é exclusividade de grandes fortunas. Famílias de classe média com alguns imóveis já podem se beneficiar enormemente dessa estrutura para evitar conflitos futuros e pagar menos impostos legalmente.</p>
+      <p>A "blindagem patrimonial" absoluta é um mito, mas a proteção patrimonial através de Holdings permanece a estratégia mais robusta para empresários e investidores.</p>
+      
+      <h3>O que mudou?</h3>
+      <p>Decisões recentes do STJ reforçaram que a desconsideração da personalidade jurídica (atingir os bens dos sócios por dívidas da empresa) exige prova de fraude ou confusão patrimonial. Ou seja, uma Holding bem estruturada, com contabilidade segregada e propósito negocial real, continua oferecendo uma camada extra de segurança inestimável.</p>
+      
+      <p>Além da proteção, a governança corporativa que uma Holding impõe à família evita que conflitos pessoais contaminem a gestão dos bens, garantindo a perenidade do patrimônio para as próximas gerações.</p>
     `
   },
 ];
