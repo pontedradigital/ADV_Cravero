@@ -20,82 +20,64 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Sobre", href: "#sobre" },
   { label: "Áreas de Atuação", href: "#atuacao" },
   { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Blog", href: "#blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Contato", href: "#contato" },
 ];
 
 export const PRACTICE_AREAS: PracticeArea[] = [
   {
-    id: "civil",
-    title: "Direito Civil",
-    description: "Resolução de conflitos, contratos, responsabilidade civil e indenizações.",
-    fullDescription: "O Direito Civil é a base das relações privadas. Nossa atuação abrange desde a elaboração e análise minuciosa de contratos até a defesa em ações de responsabilidade civil. Atuamos com foco na prevenção de litígios e na segurança jurídica dos negócios e relações pessoais.",
-    purpose: "Regular as relações entre particulares, garantindo o cumprimento de obrigações, a validade dos negócios jurídicos e a reparação de danos causados a terceiros.",
-    whenToHire: "Ao realizar contratos de alto valor, sofrer danos materiais ou morais, enfrentar problemas de inadimplência ou precisar de assessoria para interpretar cláusulas contratuais complexas.",
-    icon: Scale
-  },
-  {
-    id: "imobiliario",
-    title: "Direito Imobiliário",
-    description: "Assessoria em compra e venda, locações, regularização de imóveis e condomínios.",
-    fullDescription: "Oferecemos assessoria jurídica completa para transações imobiliárias, garantindo a segurança do seu patrimônio. Realizamos Due Diligence imobiliária, regularização de registros, atuação em ações possessórias e assessoria para condomínios e incorporadoras.",
-    purpose: "Garantir a segurança jurídica na aquisição, venda, locação e posse de bens imóveis, evitando fraudes e problemas registrais futuros.",
-    whenToHire: "Antes de assinar qualquer contrato de compra e venda de imóvel, ao enfrentar problemas com inquilinos ou locadores, para regularizar escrituras ou em conflitos de condomínio.",
-    icon: Home
-  },
-  {
-    id: "inventario",
-    title: "Inventário e Sucessões",
-    description: "Planejamento sucessório, inventários judiciais e extrajudiciais ágeis.",
-    fullDescription: "Tratamos do momento delicado da sucessão com técnica e sensibilidade. Especialistas em Inventários Extrajudiciais (em cartório) para maior agilidade, e Judiciais quando necessário. Também atuamos preventivamente com Planejamento Sucessório e Testamentos.",
-    purpose: "Formalizar a transferência do patrimônio aos herdeiros de forma legal, resolver disputas familiares sobre bens e reduzir a carga tributária através de planejamento.",
-    whenToHire: "Imediatamente após o falecimento de um ente querido para abertura do inventário (evitando multas) ou preventivamente, para organizar a distribuição de bens em vida.",
-    icon: FileText
-  },
-  {
-    id: "familiar",
-    title: "Direito de Família",
-    description: "Divórcios, pensão alimentícia, guarda e tutela com discrição e empatia.",
-    fullDescription: "Atuação humanizada em conflitos familiares. Cuidamos de processos de Divórcio (Consensual ou Litigioso), Regulamentação de Guarda, Pensão Alimentícia, Reconhecimento e Dissolução de União Estável e Adoção.",
-    purpose: "Resolver conflitos familiares com o menor impacto emocional possível, garantindo os direitos dos cônjuges e, principalmente, o bem-estar dos filhos menores.",
-    whenToHire: "No momento da ruptura conjugal, quando houver necessidade de rever valores de pensão, ou para formalizar acordos de convivência e guarda.",
-    icon: Users
-  },
-  {
-    id: "trabalhista",
-    title: "Direito Trabalhista",
-    description: "Defesa dos direitos de trabalhadores e assessoria preventiva para empresas.",
-    fullDescription: "Para empresas, atuamos no preventivo trabalhista (Compliance) reduzindo passivos. Para empregados, buscamos a reparação de direitos violados, como verbas rescisórias, horas extras, assédio moral e reconhecimento de vínculo.",
-    purpose: "Equilibrar a relação capital-trabalho, garantindo que as normas da CLT sejam cumpridas e defendendo os interesses da parte representada em reclamações trabalhistas.",
-    whenToHire: "Empresas: Consultoria mensal ou ao receber uma notificação. Trabalhadores: Ao ser demitido sem justa causa sem receber as verbas corretas ou trabalhar em condições irregulares.",
-    icon: Briefcase
-  },
-  {
     id: "consumidor",
     title: "Direito do Consumidor",
-    description: "Defesa contra práticas abusivas, negativação indevida e danos morais.",
-    fullDescription: "Defesa intransigente contra abusos de grandes empresas. Atuamos em casos de negativação indevida no SPC/Serasa, problemas com planos de saúde, companhias aéreas (atraso/cancelamento de voo), bancos e defeitos em produtos.",
-    purpose: "Restabelecer o equilíbrio nas relações de consumo, garantindo indenizações por danos materiais e morais causados por falha na prestação de serviços.",
-    whenToHire: "Ao ter o nome negativado indevidamente, ter voos cancelados, sofrer cobranças abusivas ou ter negativas de cobertura de planos de saúde.",
+    description: "Defesa especializada para consumidores lesados por práticas abusivas.",
+    fullDescription: "Atuação intransigente na defesa de seus direitos contra abusos. Especialistas em casos de negativação indevida, problemas com voos (cancelamento/atraso), planos de saúde, defeitos em produtos e revisão de contratos bancários abusivos.",
+    purpose: "Garantir a reparação integral de danos materiais e morais causados por falhas na prestação de serviços ou produtos defeituosos.",
+    whenToHire: "Ao sofrer cobranças indevidas, ter nome negativado injustamente, enfrentar problemas com companhias aéreas ou ter negativas de cobertura de saúde.",
     icon: ShoppingCart
   },
   {
-    id: "empresarial",
-    title: "Direito Empresarial",
-    description: "Consultoria jurídica para negócios, contratos mercantis e recuperação de crédito.",
-    fullDescription: "Assessoria jurídica estratégica para o dia a dia da empresa. Análise de contratos com fornecedores, recuperação de crédito de inadimplentes e estruturação de negócios. Focamos em blindar a operação da empresa contra riscos jurídicos.",
-    purpose: "Dar segurança legal para a atividade econômica, recuperar ativos financeiros e gerenciar riscos contratuais do negócio.",
-    whenToHire: "Na fundação da empresa, na elaboração de contratos padrão com fornecedores/clientes e na gestão de crises financeiras ou cobranças judiciais.",
+    id: "consumidor-empresarial",
+    title: "Consumidor para Empresas",
+    description: "Auditorias, Compliance e defesa em processos consumeristas.",
+    fullDescription: "Proteção jurídica para sua empresa. Realizamos auditorias preventivas, implementação de Compliance Consumerista para reduzir passivos judiciais e defesa estratégica em ações movidas por consumidores e órgãos fiscalizadores (PROCON).",
+    purpose: "Blindar a empresa contra multas e processos em massa, adequando processos internos ao Código de Defesa do Consumidor.",
+    whenToHire: "Para prevenir passivos, ao receber autuações do PROCON ou para defesa técnica em processos judiciais de consumo.",
     icon: Building2
   },
   {
-    id: "societario",
-    title: "Direito Societário",
-    description: "Constituição de empresas, fusões, aquisições e dissolução de sociedades.",
-    fullDescription: "Especialistas na relação entre sócios. Elaboramos Contratos Sociais, Acordos de Sócios (para evitar conflitos futuros), atuamos em processos de exclusão de sócio e apuração de haveres na dissolução da sociedade.",
-    purpose: "Organizar a estrutura de poder e capital da empresa, definindo regras claras de entrada e saída de sócios para a perenidade do negócio.",
-    whenToHire: "Ao abrir uma sociedade, ao receber investimento, quando houver desentendimento grave entre os sócios ou desejo de saída da sociedade.",
+    id: "holding-tributaria",
+    title: "Holding para Tributos",
+    description: "Planejamento tributário inteligente para otimização fiscal.",
+    fullDescription: "Estruturação de Holdings Patrimoniais visando a eficiência tributária. Redução lícita da carga de impostos sobre aluguéis, vendas de imóveis e transmissão de bens, aproveitando os benefícios fiscais da pessoa jurídica.",
+    purpose: "Maximizar os lucros através da redução legal de impostos incidentes sobre o patrimônio e suas receitas.",
+    whenToHire: "Se você possui imóveis alugados na pessoa física ou pretende vender bens de alto valor e deseja reduzir o impacto do Imposto de Renda.",
+    icon: Scale
+  },
+  {
+    id: "protecao-patrimonial",
+    title: "Proteção Patrimonial",
+    description: "Estratégias legais para segurança dos seus bens e legado.",
+    fullDescription: "Implementação de mecanismos jurídicos para proteger seu patrimônio pessoal de riscos empresariais, trabalhistas e cíveis. Segregação de riscos através de estruturas societárias sólidas e legais.",
+    purpose: "Garantir que o patrimônio conquistado não seja atingido por instabilidades econômicas ou riscos inerentes à atividade empresarial.",
+    whenToHire: "Empresários, sócios ou investidores que desejam blindar seu patrimônio pessoal contra riscos de seus negócios.",
     icon: Gavel
+  },
+  {
+    id: "holding-locacao",
+    title: "Holding de Locação",
+    description: "Gestão profissional e tributação reduzida para imóveis de aluguel.",
+    fullDescription: "Centralização de imóveis em uma estrutura societária específica para locação. Vantagens na administração, sucessão e, principalmente, na tributação dos rendimentos de aluguel (redução de até 27,5% para cerca de 11,33%).",
+    purpose: "Profissionalizar a gestão imobiliária e reduzir drasticamente a carga tributária sobre rendimentos de aluguéis.",
+    whenToHire: "Proprietários de múltiplos imóveis ou imóveis de alto valor que geram renda de aluguel tributada na pessoa física.",
+    icon: Home
+  },
+  {
+    id: "assessoria-mensal",
+    title: "Assessoria Mensal",
+    description: "Suporte jurídico contínuo para sua tranquilidade e do seu negócio.",
+    fullDescription: "Cobertura jurídica completa e recorrente ('Full Service'). Disponibilidade constante para tirar dúvidas, analisar contratos do dia a dia e resolver problemas imediatos, funcionando como um departamento jurídico externo.",
+    purpose: "Prevenir problemas antes que eles aconteçam, oferecendo segurança jurídica em tempo real para tomadas de decisão.",
+    whenToHire: "Empresas ou pessoas físicas com alto volume de demandas jurídicas que necessitam de acompanhamento próximo e constante.",
+    icon: Users
   }
 ];
 

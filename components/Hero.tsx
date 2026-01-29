@@ -101,17 +101,17 @@ export const Hero: React.FC = () => {
 
           {/* Headline - Typography Update */}
           <h1 className="font-serif text-white relative z-20">
-            <span className={`block text-5xl md:text-7xl lg:text-[5.5rem] leading-none font-normal tracking-tight transition-all duration-1000 delay-100 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              Justiça e
+            <span className={`block text-3xl md:text-5xl lg:text-[4.5rem] leading-none font-normal tracking-tight transition-all duration-1000 delay-100 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              Defesa Especializada
             </span>
-            <span className={`block text-6xl md:text-8xl lg:text-[7.5rem] leading-none italic font-medium text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-200 pb-4 -mt-2 md:-mt-4 transition-all duration-1000 delay-200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              Estratégia
+            <span className={`block text-4xl md:text-6xl lg:text-[5.5rem] leading-none italic font-medium text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-200 pb-4 mt-2 transition-all duration-1000 delay-200 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              Consumidor & Empresas
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className={`text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-xl transition-all duration-1000 delay-300 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            Soluções jurídicas sofisticadas e personalizadas para a proteção do seu patrimônio e garantias fundamentais com o rigor da tradição.
+            Atuação estratégica para consumidores lesados e blindagem jurídica para empresas. Experiência, técnica e resultados que protegem seus direitos.
           </p>
 
           {/* CTAs */}
@@ -119,7 +119,7 @@ export const Hero: React.FC = () => {
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="group">
               <Button className="h-14 px-8 text-base shadow-[0_0_40px_rgba(212,175,55,0.3)] hover:shadow-[0_0_60px_rgba(212,175,55,0.5)] !border-none relative overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2">
-                  Agendar Consultoria
+                  Falar com Especialista
                   <MessageCircle size={18} className="transition-transform duration-300 group-hover:scale-110 group-hover:animate-pulse" />
                 </span>
                 {/* Shimmer Effect overlay */}
@@ -129,7 +129,7 @@ export const Hero: React.FC = () => {
             <a href="#atuacao" onClick={(e) => { e.preventDefault(); smoothScrollTo('#atuacao', 1000); }} className="group">
               <Button variant="outline" className="h-14 px-8 text-base !border-gray-700 !text-gray-300 hover:!border-gold-500 hover:!text-gold-400 hover:!bg-dark-800">
                 <span className="relative">
-                  Conhecer Áreas de Atuação
+                  Nossas Áreas
                   <span className="absolute left-1/2 -bottom-1 w-0 h-[1px] bg-gold-400 -translate-x-1/2 transition-all duration-300 group-hover:w-full"></span>
                 </span>
               </Button>
@@ -137,10 +137,9 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Trust Indicators / Stats - IMPROVED LAYOUT & ANIMATION */}
-          <div className="pt-12 mt-8 border-t border-gold-500/20 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="pt-12 mt-8 border-t border-gold-500/20 grid grid-cols-2 gap-8 md:gap-12">
             {[
               { label: "Anos de Experiência", value: "10+", duration: 3500 },     // Ends first (3.5s)
-              { label: "Causas Favoráveis", value: "98%", duration: 4500 },       // Ends second (4.5s)
               { label: "Clientes Atendidos", value: "500+", duration: 5500 }      // Ends last (5.5s)
             ].map((stat, i) => (
               <div

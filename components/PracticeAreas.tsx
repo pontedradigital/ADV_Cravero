@@ -426,16 +426,7 @@ export const PracticeAreas: React.FC = () => {
         )}
 
         {/* Global CTA if not expanded */}
-        {!expandedId && (
-          <ScrollReveal delay={300}>
-            <div className={`mt-16 text-center ${isTransitioning ? 'animate-shrink-out' : 'animate-restore'}`}>
-              <h3 className="text-2xl font-serif text-white mb-6">Seu caso não se encaixa nas áreas acima?</h3>
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                <Button variant="outline">Fale com um Especialista Agora</Button>
-              </a>
-            </div>
-          </ScrollReveal>
-        )}
+
       </div>
     </section>
   );

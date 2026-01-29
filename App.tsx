@@ -9,6 +9,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { CookieConsent } from './components/CookieConsent';
+import { ExtraCTA } from './components/ExtraCTA';
 
 // Component imports for Lazy Loading specific routes
 const BlogList = lazy(() => import('./components/BlogList').then(module => ({ default: module.BlogList })));
@@ -23,12 +24,25 @@ const LandingPage: React.FC = () => (
   <div className="font-sans antialiased text-gray-100 bg-dark-900 min-h-screen selection:bg-gold-500 selection:text-white">
     <Header />
     <main>
-      <Hero />
-      <About />
-      <PracticeAreas />
-      <Testimonials />
-      <BlogPreview />
-      <Contact />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="sobre">
+        <About />
+      </div>
+      <div id="atuacao">
+        <PracticeAreas />
+      </div>
+      <ExtraCTA />
+      <div id="depoimentos">
+        <Testimonials />
+      </div>
+      <div id="blog-preview">
+        <BlogPreview />
+      </div>
+      <div id="contato">
+        <Contact />
+      </div>
     </main>
     <Footer />
     <WhatsAppButton />
