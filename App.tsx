@@ -10,6 +10,8 @@ import { Footer } from './components/Footer';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { CookieConsent } from './components/CookieConsent';
 import { ExtraCTA } from './components/ExtraCTA';
+import { CorrespondentServices } from './components/CorrespondentServices';
+
 
 // Component imports for Lazy Loading specific routes
 const BlogList = lazy(() => import('./components/BlogList').then(module => ({ default: module.BlogList })));
@@ -34,6 +36,7 @@ const LandingPage: React.FC = () => (
         <PracticeAreas />
       </div>
       <ExtraCTA />
+      <CorrespondentServices />
       <div id="depoimentos">
         <Testimonials />
       </div>

@@ -17,6 +17,10 @@ export const ExtraCTA: React.FC = () => {
                             Seu caso não se encaixa nas áreas acima?
                         </h3>
 
+                        <p className="text-gray-300 text-lg mb-8 max-w-2xl leading-relaxed">
+                            Caso você não tenha encontrado, em nossas soluções apresentadas, as respostas para o seu problema, seja Civil ou Trabalhista, entre em contato com nossa equipe para tirar suas dúvidas.
+                        </p>
+
                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="group">
                             <Button
                                 variant="primary"
